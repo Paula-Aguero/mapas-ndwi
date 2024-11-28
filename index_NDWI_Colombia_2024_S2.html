@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_ed265f686d67bdd94826b579cd15f073 {
+                #map_1f4ea0e74a0ae6ef775894ef59a6e525 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -42,7 +42,7 @@
     <div style="position: fixed; 
             bottom: 20px; left: 50px; width: auto; height: auto;
             z-index: 9999; font-size: 14px; color: black; font-weight: bold; text-align: center;">
-        Ecuador | 2024 | 1er semestre (Ene - Jun)
+        Colombia | 2024 | 2do semestre (Jul - Dic)
     </div>
     
     
@@ -71,16 +71,16 @@
     </div>
     
     
-            <div class="folium-map" id="map_ed265f686d67bdd94826b579cd15f073" ></div>
+            <div class="folium-map" id="map_1f4ea0e74a0ae6ef775894ef59a6e525" ></div>
         
 </body>
 <script>
     
     
-            var map_ed265f686d67bdd94826b579cd15f073 = L.map(
-                "map_ed265f686d67bdd94826b579cd15f073",
+            var map_1f4ea0e74a0ae6ef775894ef59a6e525 = L.map(
+                "map_1f4ea0e74a0ae6ef775894ef59a6e525",
                 {
-                    center: [-1.4328003721031621, -78.76612016462704],
+                    center: [3.8953556727233427, -73.0789456023007],
                     crs: L.CRS.EPSG3857,
                     zoom: 4,
                     zoomControl: true,
@@ -92,37 +92,37 @@
 
         
     
-            var tile_layer_d6231611572adce9a9312771b772003a = L.tileLayer(
+            var tile_layer_eb7428664d585cd1252f66f4cd47c170 = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
             );
         
     
-            tile_layer_d6231611572adce9a9312771b772003a.addTo(map_ed265f686d67bdd94826b579cd15f073);
+            tile_layer_eb7428664d585cd1252f66f4cd47c170.addTo(map_1f4ea0e74a0ae6ef775894ef59a6e525);
         
     
-            var tile_layer_607ac7ab6c70ce659aaa5f3f4289f0e8 = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/19a1d1ac782d07549eaccaf65fa14439-d6e62f3ed9a3eb3df9d7ea0ba1fefe4c/tiles/{z}/{x}/{y}",
+            var tile_layer_a1c1a30b541e1abe0f28150f14ecf355 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/392a3581e9d74fbf30c510b5badfd120-1b28205af811ea6b704e42905ddebdad/tiles/{z}/{x}/{y}",
                 {"attribution": "Google Earth Engine", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_607ac7ab6c70ce659aaa5f3f4289f0e8.addTo(map_ed265f686d67bdd94826b579cd15f073);
+            tile_layer_a1c1a30b541e1abe0f28150f14ecf355.addTo(map_1f4ea0e74a0ae6ef775894ef59a6e525);
         
     
-            var layer_control_25b6296ae3551855171d1e153e72479b_layers = {
+            var layer_control_2ab8353be116418a019d7d921602c43b_layers = {
                 base_layers : {
-                    "cartodbpositron" : tile_layer_d6231611572adce9a9312771b772003a,
+                    "cartodbpositron" : tile_layer_eb7428664d585cd1252f66f4cd47c170,
                 },
                 overlays :  {
-                    "Indice NDWI - Ecuado" : tile_layer_607ac7ab6c70ce659aaa5f3f4289f0e8,
+                    "Indice NDWI - Colomb" : tile_layer_a1c1a30b541e1abe0f28150f14ecf355,
                 },
             };
-            let layer_control_25b6296ae3551855171d1e153e72479b = L.control.layers(
-                layer_control_25b6296ae3551855171d1e153e72479b_layers.base_layers,
-                layer_control_25b6296ae3551855171d1e153e72479b_layers.overlays,
+            let layer_control_2ab8353be116418a019d7d921602c43b = L.control.layers(
+                layer_control_2ab8353be116418a019d7d921602c43b_layers.base_layers,
+                layer_control_2ab8353be116418a019d7d921602c43b_layers.overlays,
                 {"autoZIndex": true, "collapsed": true, "position": "topright"}
-            ).addTo(map_ed265f686d67bdd94826b579cd15f073);
+            ).addTo(map_1f4ea0e74a0ae6ef775894ef59a6e525);
 
         
 </script>
